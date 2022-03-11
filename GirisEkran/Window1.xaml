@@ -1,0 +1,51 @@
+﻿<Window x:Class="GirisEkran.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GirisEkran"
+        mc:Ignorable="d"
+         Height="450" Width="320"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen">
+    <Border CornerRadius="20" Background="#FF153249">
+
+        <StackPanel Margin="10,10,0,50" x:Name="stack">
+            <Label Content="Eklemek istediğiniz kategoriyi seçiniz"
+                   Foreground="White"
+                   Margin="0,0,0,20"
+                   FontSize="18"/>
+            <RadioButton x:Name="kisi"
+                         Content="Tarihi Şahıs"
+                         Tag="Tarihi Şahıs"
+                         Foreground="White"
+                         Margin="10,0,0,20"
+                         FontSize="18"/>
+            <RadioButton x:Name="savas"
+                         Content="Savaş"
+                         Tag="Savaş"
+                         Foreground="White"
+                         Margin="10,0,0,20"
+                         FontSize="18"/>
+            <RadioButton x:Name="muharebe"
+                         Content="Muharebe"
+                         Tag="Muharebe"
+                         Foreground="White"
+                         Margin="10,0,0,20"
+                         FontSize="18"/>
+            <RadioButton x:Name="harita"
+                         Content="Harita"
+                         Tag="Harita"
+                         Foreground="White"
+                         Margin="10,0,0,20"
+                         FontSize="18"/>
+            <Button x:Name="sec" Content="Tamam"
+                    Foreground="white"
+                    Width="70" Background="#FF6A4646"
+                    Margin="0,50,0,0"
+                    FontSize="18"
+                    Click="sec_Click"/>
+        </StackPanel>
+    </Border>
+</Window>

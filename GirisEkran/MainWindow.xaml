@@ -1,0 +1,151 @@
+﻿<Window x:Class="GirisEkran.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GirisEkran"
+        mc:Ignorable="d"
+        Height="800" Width="1200"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterScreen" 
+        AllowsTransparency="True" 
+        WindowStyle="None" Icon="C:\Users\yasin\source\repos\Tarih\GirisEkran\İkonlar/icon.jpg" >
+
+    <Border Background="white">
+        <Border.Effect>
+            <DropShadowEffect RenderingBias="Quality" ShadowDepth="9"/>
+        </Border.Effect>
+        <Grid >
+        <Grid.Effect>
+            <DropShadowEffect Direction="1000" 
+                              Opacity="0.5"/>
+        </Grid.Effect>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition />
+            <RowDefinition Height="600"/>
+        </Grid.RowDefinitions>
+        <Canvas Panel.ZIndex="1"
+                Margin="8,0,0,0">
+            <Label Grid.Column="0" Content="Tarih"
+               Background="#FF27263E"
+               Foreground="White"
+               FontSize="25"
+               Height="40"/>
+        </Canvas>
+        <Border Grid.ColumnSpan="2" Background="#FF27263E"
+                MouseMove="Border_MouseMove">
+            
+            <StackPanel HorizontalAlignment="Right"
+                        
+                        Orientation="Horizontal">
+                <Button Content="—"
+                        Width="50"
+                        Height="40"
+                        Background="Transparent" 
+                        FontWeight="Bold"
+                        BorderThickness="0"
+                        Click="gizle_Click"/>
+                <Button Content="×"
+                        Width="50"
+                        Height="40"
+                        Background="Transparent"
+                        FontWeight="Bold"
+                        FontSize="30"
+                        BorderThickness="0"
+                        Click="kapama_Click"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Background="#FF27263E">
+            <Button Background="Transparent" 
+                    BorderThickness="0,2,0,2"
+                    Click="Yeni_Click">
+                <StackPanel Margin="0,0,0,30">
+                    <Image  Height="100" Source="C:\Users\yasin\source\repos\Tarih\GirisEkran\ArkaPlanlar/roma.jpg"
+                       />
+                    <TextBlock Text="EKLE" HorizontalAlignment="Center"
+                               Foreground="White"
+                               FontSize="20"/>
+                </StackPanel>
+            </Button>
+        </Border>
+
+            <Border  Grid.Row="2" Background="#FF27263E">
+            <StackPanel>
+                <Button Style="{DynamicResource MenuButon}"
+                        Click="General_Click">
+                   <DockPanel Width="200" >
+                        <Image Source="C:\Users\yasin\source\repos\Tarih\GirisEkran\ArkaPlanlar/General.png"  />
+                        <TextBlock Text="Generaller"
+                                   VerticalAlignment="Center"
+                                   Margin="20,0,0,0"/>
+                    </DockPanel>
+                </Button>
+
+                <Button Style="{DynamicResource MenuButon}"
+                        Click="Muharebe_Click">
+                    <DockPanel Width="200" >
+                        <Image Source="C:\Users\yasin\source\repos\Tarih\GirisEkran\ArkaPlanlar/swords.png"  />
+                        <TextBlock Text="Muharebeler"
+                                   VerticalAlignment="Center"
+                                   Margin="20,0,0,0"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource MenuButon}"
+                        Click="Savas_Click">
+                    <DockPanel Width="200" >
+                        <Image Source="C:\Users\yasin\source\repos\Tarih\GirisEkran\ArkaPlanlar/wolf.png"   />
+                        <TextBlock Text="Savaşlar"
+                                   VerticalAlignment="Center"
+                                   Margin="20,0,0,0"/>
+                    </DockPanel>
+                </Button>
+                <Button Style="{DynamicResource MenuButon}" Click="devlet_Click">
+                    <DockPanel Width="200" >
+                        <Image Source="C:\Users\yasin\source\repos\Tarih\GirisEkran\ArkaPlanlar/devlet.png"   />
+                        <TextBlock Text="Devlet Adamları"
+                                   VerticalAlignment="Center"
+                                   Margin="20,0,0,0"/>
+                    </DockPanel>
+                </Button>
+                    <Button Style="{DynamicResource MenuButon}"
+                        Click="harita_Click">
+                        <DockPanel Width="200" >
+                            <Image Source="C:\Users\yasin\source\repos\Tarih\GirisEkran\ArkaPlanlar/harita.png"  />
+                            <TextBlock Text="Haritalar"
+                                   VerticalAlignment="Center"
+                                   Margin="20,0,0,0"/>
+                        </DockPanel>
+                    </Button>
+                    <Button Style="{DynamicResource MenuButon}"
+                        Click="Button_Click">
+                        <DockPanel Width="200" >
+                            <Image Source="C:\Users\yasin\source\repos\Tarih\GirisEkran\İkonlar\homepage.png"  />
+                            <TextBlock Text="Anasayfa"
+                                   VerticalAlignment="Center"
+                                   Margin="20,0,0,0"/>
+                        </DockPanel>
+
+                    </Button>
+
+                </StackPanel>
+        </Border>
+
+            <Border Grid.Row="1" Grid.Column="1"
+                    CornerRadius="10" Background="#FF182E20">
+                <TextBlock  FontSize="20"
+                           Foreground="white"
+                            x:Name="text"
+                            TextWrapping="Wrap"/>
+            </Border>
+                        
+            <Grid Grid.Row="2" Grid.Column="1"
+              x:Name="kontrolEt"/>
+        </Grid>
+    </Border>
+</Window>

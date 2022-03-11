@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="2087279.jpg" />
+    <None Remove="ArkaPlanlar\2087279.jpg" />
+    <None Remove="ArkaPlanlar\601558.jpg" />
+    <None Remove="ArkaPlanlar\Colezium.jpg" />
+    <None Remove="ArkaPlanlar\the-new-york-public-library-TNU8604rMVk-unsplash.jpg" />
+    <None Remove="ArkaPlanlar\wallpaperflare.com_wallpaper %282%29.jpg" />
+    <None Remove="ArkaPlanlar\wp2745608-mobile-world-war-2-wallpaper.jpg" />
+    <None Remove="Colezium.jpg" />
+    <None Remove="general2.png" />
+    <None Remove="harita.png" />
+    <None Remove="icon.jpg" />
+    <None Remove="KullanıcıKontrolleri\61692ebc85536fe31ea97366f7c32984.jpg" />
+    <None Remove="swords.png" />
+    <None Remove="the-new-york-public-library-TNU8604rMVk-unsplash.jpg" />
+    <None Remove="wallpaperflare.com_wallpaper %282%29.jpg" />
+    <None Remove="wolf.png" />
+    <None Remove="wp2745608-mobile-world-war-2-wallpaper.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Kutuphane\Kutuphane.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ArkaPlanlar\2087279.jpg" />
+    <Resource Include="ArkaPlanlar\601558.jpg" />
+    <Resource Include="ArkaPlanlar\Colezium.jpg" />
+    <Resource Include="ArkaPlanlar\the-new-york-public-library-TNU8604rMVk-unsplash.jpg" />
+    <Resource Include="ArkaPlanlar\wallpaperflare.com_wallpaper (2).jpg" />
+    <Resource Include="ArkaPlanlar\wp2745608-mobile-world-war-2-wallpaper.jpg" />
+    <Resource Include="ArkaPlanlar\devlet.png" />
+    <Resource Include="ArkaPlanlar\general.png" />
+    <Resource Include="ArkaPlanlar\general2.png" />
+    <Resource Include="ArkaPlanlar\harita.png" />
+    <Resource Include="ArkaPlanlar\icon.jpg" />
+    <Resource Include="KullanıcıKontrolleri\61692ebc85536fe31ea97366f7c32984.jpg" />
+    <Resource Include="ArkaPlanlar\roma.jpg" />
+    <Resource Include="ArkaPlanlar\swords.png" />
+    <Resource Include="ArkaPlanlar\wolf.png" />
+  </ItemGroup>
+
+</Project>
